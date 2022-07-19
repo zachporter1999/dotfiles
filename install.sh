@@ -38,12 +38,13 @@ then
     log_file=/dev/stdout
 fi
 
-echo -e "${clr_green}Installing Tmux and Xterm${clr_rst}"
+echo -e "${clr_green}Installing Tmux and Urxvt${clr_rst}"
 sudo $update &> $log_file
-sudo $install tmux xterm &> $log_file
+sudo $install tmux rxvt-unicode &> $log_file
 
 echo -e "${clr_blue}Setting Up Tmux${clr_orange}"
 ln -sf $PWD/tmux.conf ~/.tmux.conf
+ln -sf $PWD/nested.tmux.conf ~/.nested.tmux.conf
 
-echo -e "${clr_blue}Setting Up Xterm${clr_orange}"
+echo -e "${clr_blue}Setting Up Xresources${clr_orange}"
 ln -sf $PWD/Xresources ~/.Xresources
