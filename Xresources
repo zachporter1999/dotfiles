@@ -16,38 +16,31 @@ URxvt.urgentOnBell: true
 URxvt.depth: 24
 URxvt.iso14755: false
 
-urxvt*background: #1E2127
-urxvt*foreground: #ABB2BF
-urxvt*cursorColor: #5C6370
-
-! grey
-urxvt*color0:  #1E2127
-urxvt*color8:  #5C6370
-
-! red
-urxvt*color1:  #E06C75
-urxvt*color9:  #E06C75
-
-! green
-urxvt*color2:  #98C379
-urxvt*color10: #98C379
-
-! yellow
-urxvt*color3:  #D19A66
-urxvt*color11: #D19A66
-
-! blue
-urxvt*color4:  #61AFEF
-urxvt*color12: #61AFEF
-
-! magenta
-urxvt*color5:  #C678DD
-urxvt*color13: #C678DD
-
-! Cyan
-urxvt*color6:  #56B6C2
-urxvt*color14: #56B6C2
-
-! white
-urxvt*color7:  #ABB2Bf
-urxvt*color15: #FFFFFF
+! hard contrast: *background: #1d2021
+URxvt*background: #282828
+! soft contrast: *background: #32302f
+URxvt*foreground: #ebdbb2
+! Black + DarkGrey
+URxvt*color0: #282828
+URxvt*color8: #928374
+! DarkRed + Red
+URxvt*color1: #cc241d
+URxvt*color9: #fb4934
+! DarkGreen + Green
+URxvt*color2: #98971a
+URxvt*color10: #b8bb26
+! DarkYellow + Yellow
+URxvt*color3: #d79921
+URxvt*color11: #fabd2f
+! DarkBlue + Blue
+URxvt*color4: #458588
+URxvt*color12: #83a598
+! DarkMagenta + Magenta
+URxvt*color5: #b16286
+URxvt*color13: #d3869b
+! DarkCyan + Cyan
+URxvt*color6: #689d6a
+URxvt*color14: #8ec07c
+! LightGrey + White
+URxvt*color7: #a89984
+URxvt*color15: #ebdbb2
