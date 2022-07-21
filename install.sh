@@ -27,7 +27,7 @@ then
     install="$package_manager install -y"
 else
     echo -e "${clr_red}OS not supported"
-    exit 1
+#    exit 1
 fi
 
 
@@ -40,11 +40,12 @@ fi
 
 echo -e "${clr_green}Installing Tmux and Urxvt${clr_rst}"
 sudo $update &> $log_file
-sudo $install tmux rxvt-unicode &> $log_file
+# sudo $install tmux rxvt-unicode &> $log_file
 
 echo -e "${clr_blue}Setting Up Tmux${clr_orange}"
 ln -sf $PWD/tmux.conf ~/.tmux.conf
 ln -sf $PWD/nested.tmux.conf ~/.nested.tmux.conf
+ln -sf $PWD/inputrc ~/.inputrc
 
 echo -e "${clr_blue}Setting Up Xresources${clr_orange}"
 ln -sf $PWD/Xresources ~/.Xresources
